@@ -25,6 +25,8 @@ add_message_files(
   HilSensor.msg
   HilStateQuaternion.msg
   HomePosition.msg
+  LogData.msg
+  LogEntry.msg
   ManualControl.msg
   Mavlink.msg
   OpticalFlowRad.msg
@@ -34,8 +36,12 @@ add_message_files(
   RCIn.msg
   RCOut.msg
   RadioStatus.msg
+  RTCM.msg
   State.msg
+  StatusText.msg
   Thrust.msg
+  Trajectory.msg
+  TimesyncStatus.msg
   VFR_HUD.msg
   Vibration.msg
   Waypoint.msg
@@ -63,6 +69,9 @@ add_service_files(
   FileRename.srv
   FileTruncate.srv
   FileWrite.srv
+  LogRequestData.srv
+  LogRequestEnd.srv
+  LogRequestList.srv
   ParamGet.srv
   ParamPull.srv
   ParamPush.srv
